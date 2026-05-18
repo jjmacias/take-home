@@ -98,7 +98,6 @@ npm run build && npm start
 ```
 /offboard                         opens the modal with blank fields
 /offboard jane@company.com        pre-fills the employee email
-/offboard Jane left the company   natural language — Claude extracts the email
 ```
 
 The modal validates both emails against Google Workspace before submission. Once confirmed, the offboarding runs and the audit report is posted to `SLACK_AUDIT_CHANNEL`.
