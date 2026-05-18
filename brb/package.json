@@ -1,0 +1,26 @@
+{
+  "name": "brb",
+  "version": "1.0.0",
+  "description": "Big Red Button — automated Google Workspace offboarding via Slack",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "setup:notion": "ts-node scripts/setupNotion.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.96.0",
+    "@notionhq/client": "^2.2.15",
+    "@slack/bolt": "^3.21.1",
+    "dotenv": "^16.4.5",
+    "googleapis": "^140.0.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
